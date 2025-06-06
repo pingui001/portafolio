@@ -2,80 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Porras - Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="style">
-    <!-- Header -->
-    <div class="style1">
+<body>
+    <header class="style1">
         <h1>Nicolas Porras</h1>
-    </div>
+    </header>
 
-    <!-- Navigation -->
-    <div class="list">
-        <a href="#about" >About Me</a>
-        <a href="#skills" >Skills</a>
-        <a href="#projects" >Projects</a>
-        <a href="#contact" >Contact</a>
-    </div>
+    <nav class="list">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- About Me -->
-    <div id="about" class="style2">
+    <section id="about" class="style2">
         <h2>About Me</h2>
         <p>Hello, I am Nicolas Porras!</p>
         <p>I enjoy software development and learning HTML. I study programming at Riwi and English.</p>
         <p>I like:</p>
         <ul>
-            <li>software development</li>
+            <li>Software development</li>
             <li>English</li>
-            <li>reading</li>
+            <li>Reading</li>
         </ul>
-        <img src="./image/Nicolas.jpeg" alt="Nicolas's photo">
+        <img src="./image/Nicolas.jpeg" alt="photo">
         <p>This is my portfolio page. I don’t want fish today!</p>
-    </div>
+    </section>
 
-    <!-- Skills -->
-    <div id="skills" class="style2">
+    <section id="skills" class="style2">
         <h2>Skills</h2>
         <ul>
             <li>HTML</li>
             <li>Python</li>
             <li>JavaScript</li>
         </ul>
-    </div>
+    </section>
 
-    <!-- Projects -->
-    <div id="projects" class="style2">
+    <section id="projects" class="style2">
         <h2>Projects</h2>
-        <p>Project 1: Portfolio Website</p>
+        <h3>Project 1: Portfolio Website</h3>
+        <img src="./image/Captura desde 2025-05-19 13-38-58.png" alt="web">
         <p>My first project, built using HTML.</p>
         <table class="sstyle">
-            <tr class="style3">
-                <th>Project Name</th>
-                <th>Technologies</th>
-                <th>Link</th>
+            <tr>
+                <th class="style3">Project Name</th>
+                <th class="style3">Technologies</th>
+                <th class="style3">Link</th>
             </tr>
-            <img src="./image/Captura desde 2025-05-19 13-38-58.png" alt="Project">
             <tr>
                 <td>Portfolio Website</td>
                 <td>HTML</td>
                 <td><a href="https://github.com/pingui001/portafolio">View Project</a></td>
             </tr>
         </table>
-    </div>
+    </section>
 
-    <!-- Contact -->
-    <div id="contact" class="style2">
+    <section id="contact" class="style2">
         <h2>Contact</h2>
-        <p>Name: <input type="text" placeholder="Your Name"></p>
-        <p>Email: <input type="email" placeholder="Your Email"></p>
-        <p>Message: <textarea placeholder="Your Message"></textarea></p>
-        <button class="button">Send</button>
-    </div>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit" class="button">Send</button>
+        </form>
+    </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p><a href="https://github.com/" style="color: rgb(252, 253, 253);">GitHub</a></p>
-    </div>
+    <footer class="footer">
+        <p><a href="https://github.com">GitHub</a></p>
+    </footer>
 </body>
 </html>
